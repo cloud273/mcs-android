@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context="com.cloud273.patient.fragment.account.MPUpdateAccountFragment">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:scrollbars="none"
+            tools:ignore="HardcodedText">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_margin="@dimen/offset"
+                >
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                    app:srcCompat="@mipmap/profile_icon"
+                    app:civ_shadow="false"
+                    android:id="@+id/imageView"
+                    android:layout_weight="1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/light_gray_color"
+                    android:layout_marginTop="@dimen/offset"
+                    tools:ignore="InefficientWeight" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/nameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/offset">
+
+                <com.cloud273.localization.CLTextInputEditText
+                        android:id="@+id/nameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:hint="Fullname"
+                        android:inputType="textPersonName|textCapWords"
+                        android:textSize="@dimen/normal_text_size"
+                        app:lHint="Fullname"
+                        tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/offset">
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/dobLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                    <com.cloud273.localization.CLTextInputEditText
+                            android:id="@+id/dobTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:autofillHints=""
+                            android:hint="Date of birth"
+                            android:inputType="date"
+                            android:textSize="@dimen/normal_text_size"
+                            app:lHint="Date_of_birth"
+                            tools:targetApi="o" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginEnd="10dp"
+                        android:orientation="horizontal"
+                        android:checkedButton="@+id/femaleRB" android:id="@+id/genderRB">
+                    <com.cloud273.localization.CLRadioButton
+                            android:text="Male"
+                            app:lText="Male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/maleRB"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/small_text_size"/>
+                    <com.cloud273.localization.CLRadioButton
+                            android:text="Female"
+                            app:lText="Female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/femaleRB"
+                            android:layout_weight="1"
+                            android:textSize="@dimen/small_text_size"/>
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/stateLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/offset">
+
+                <com.cloud273.localization.CLTextInputEditText
+                        android:id="@+id/stateTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:hint="State"
+                        android:inputType="text"
+                        android:textSize="@dimen/normal_text_size"
+                        app:lHint="State"
+                        tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cityLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/offset">
+
+                <com.cloud273.localization.CLTextInputEditText
+                        android:id="@+id/cityTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:hint="City"
+                        android:inputType="text"
+                        android:textSize="@dimen/normal_text_size"
+                        app:lHint="City"
+                        tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addressLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/offset">
+
+                <com.cloud273.localization.CLTextInputEditText
+                        android:id="@+id/addressTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autofillHints=""
+                        android:hint="Address"
+                        android:inputType="text|textCapWords"
+                        android:textSize="@dimen/normal_text_size"
+                        app:lHint="Address"
+                        tools:targetApi="o" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset" />
+
+            <com.cloud273.localization.CLButton
+                    android:text="Update"
+                    app:lText="Update"
+                    android:layout_width="match_parent"
+                    android:id="@+id/updateBtn"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white_color"
+                    android:background="@color/blue_color"
+                    android:layout_marginTop="@dimen/offset"
+                    android:textSize="@dimen/small_text_size"
+                    android:layout_marginBottom="@dimen/offset"/>
+
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/offset" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

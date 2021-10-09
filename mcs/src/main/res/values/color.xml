@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#FFFFFF</color>
+    <color name="black_color">#000000</color>
+    <color name="blue_color">#199DE3</color>
+    <color name="dark_gray_color">#A9A9A9</color>
+    <color name="error_color">#FF0000</color>
+    <color name="footer_background">#F7F7F7</color>
+    <color name="gray_color">#808080</color>
+    <color name="green_color">#008F00</color>
+    <color name="header_background">#F7F7F7</color>
+    <color name="header_tint_color">#007BFA</color>
+    <color name="header_title_color">#000000</color>
+    <color name="light_gray_color">#C7C7CD</color>
+    <color name="red_color">#F92602</color>
+    <color name="title_blue_color">#007BFA</color>
+    <color name="white_color">#FFFFFF</color>
+
+</resources>

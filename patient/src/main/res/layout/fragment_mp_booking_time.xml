@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="HardcodedText"
+        tools:context="com.cloud273.patient.fragment.booking.MPBookingTimeFragment">
+
+    <com.dungnguyen.qdcore.kalendar.KalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calendarView"
+            android:layout_margin="@dimen/margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/rectangle_border"/>
+    <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin"
+            app:layout_constraintTop_toBottomOf="@+id/divider"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_marginEnd="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/recyclerView"
+            app:layout_constraintBottom_toTopOf="@+id/nextBtn">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.cloud273.localization.CLButton
+            android:text="Continue"
+            app:lText="Continue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nextBtn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/margin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin"
+            android:background="@color/blue_color"
+            android:textColor="@color/white_color" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

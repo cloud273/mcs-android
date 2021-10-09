@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="HardcodedText"
+        tools:context="com.cloud273.patient.fragment.booking.MPBookingSummaryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/recyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/bottomLayout"
+            android:layout_marginBottom="@dimen/margin"/>
+
+    <LinearLayout
+            android:id="@+id/bottomLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/margin"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_margin="@dimen/margin">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin">
+
+            <com.cloud273.localization.CLCheckBox
+                    android:text="Agree_term_condition"
+                    app:lText="Agree_term_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox" />
+            <Button
+                    android:layout_marginStart="@dimen/margin"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:id="@+id/infoBtn"
+                    android:background="@mipmap/info_highlight_icon"/>
+        </LinearLayout>
+
+        <com.cloud273.localization.CLButton
+                android:text="Book"
+                app:lText="Book"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookBtn"
+                android:background="@color/blue_color"
+                android:textColor="@color/white_color"
+                />
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

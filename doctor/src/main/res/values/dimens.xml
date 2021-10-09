@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="kalendar_view">32dp</dimen>
+    <dimen name="kalendar_spacing">4dp</dimen>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin"
+        tools:ignore="HardcodedText">
+
+    <com.cloud273.localization.CLTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleTV"
+            android:text="Basic information"
+            app:lText="Basic_information"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/title_blue_color"
+            android:textStyle="italic"
+             />
+    <TextView
+            android:text="Doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTV"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/black_color"/>
+    <TextView
+            android:text="Gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/genderAgeTV"
+            android:textSize="@dimen/normal_text_size"
+            android:textColor="@color/black_color"/>
+
+</LinearLayout>

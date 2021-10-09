@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/login_navigation" app:startDestination="@id/loginFragment">
+
+    <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.cloud273.patient.fragment.account.MPLoginFragment"
+            tools:layout="@layout/fragment_mp_login">
+        <action
+                android:id="@+id/action_loginFragment_to_registerFragment"
+                app:destination="@id/registerFragment" />
+        <action
+                android:id="@+id/action_loginFragment_to_activateRequestFragment"
+                app:destination="@id/activateRequestFragment" />
+        <action
+                android:id="@+id/action_loginFragment_to_resetPasswordRequestFragment"
+                app:destination="@id/resetPasswordRequestFragment" />
+        <action
+                android:id="@+id/action_loginFragment_to_createAccountFragment"
+                app:destination="@id/createAccountFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/registerFragment"
+            android:name="com.cloud273.patient.fragment.account.MPRegisterFragment"
+            tools:layout="@layout/fragment_mp_register">
+        <action
+                android:id="@+id/action_registerFragment_to_activateFragment"
+                app:destination="@id/activateFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/createAccountFragment"
+            android:name="com.cloud273.patient.fragment.account.MPCreateAccountFragment"
+            tools:layout="@layout/fragment_mp_create_account" />
+    <fragment
+            android:id="@+id/activateFragment"
+            android:name="com.cloud273.patient.fragment.account.MPActivateFragment"
+            tools:layout="@layout/fragment_mp_activate" />
+    <fragment
+            android:id="@+id/activateRequestFragment"
+            android:name="com.cloud273.patient.fragment.account.MPActivateRequestFragment"
+            tools:layout="@layout/fragment_mp_activate_request">
+        <action
+                android:id="@+id/action_activateRequestFragment_to_activateFragment"
+                app:destination="@id/activateFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/resetPasswordRequestFragment"
+            android:name="com.cloud273.patient.fragment.account.MPResetPasswordRequestFragment"
+            tools:layout="@layout/fragment_mp_reset_password_request">
+        <action
+                android:id="@+id/action_resetPasswordRequestFragment_to_resetPasswordFragment"
+                app:destination="@id/resetPasswordFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/resetPasswordFragment"
+            android:name="com.cloud273.patient.fragment.account.MPResetPasswordFragment"
+            tools:layout="@layout/fragment_mp_reset_password" />
+</navigation>

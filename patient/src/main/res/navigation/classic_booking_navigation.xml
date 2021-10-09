@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/booking_navigation"
+            app:startDestination="@id/bookingSymptomFragment">
+
+    <fragment
+            android:id="@+id/bookingTimeFragment"
+            android:name="com.cloud273.patient.fragment.booking.MPBookingTimeFragment"
+            tools:layout="@layout/fragment_mp_booking_time">
+        <action
+                android:id="@+id/action_bookingTimeFragment_to_bookingSummaryFragment"
+                app:destination="@id/bookingSummaryFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/bookingSymptomFragment"
+            android:name="com.cloud273.patient.fragment.booking.MPBookingSymptomFragment"
+            tools:layout="@layout/fragment_mp_booking_symptom">
+        <action
+                android:id="@+id/action_bookingSymptomFragment_to_bookingHealthFragment"
+                app:destination="@id/bookingHealthFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/bookingHealthFragment"
+            android:name="com.cloud273.patient.fragment.booking.MPBookingHealthFragment"
+            tools:layout="@layout/fragment_mp_booking_health">
+        <action
+                android:id="@+id/action_bookingHealthFragment_to_allergyFragment"
+                app:destination="@id/allergyFragment" />
+        <action
+                android:id="@+id/action_bookingHealthFragment_to_surgeryFragment"
+                app:destination="@id/surgeryFragment" />
+        <action
+                android:id="@+id/action_bookingHealthFragment_to_bookingSpecialtyFragment"
+                app:destination="@id/bookingSpecialtyFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/allergyFragment"
+            android:name="com.cloud273.patient.fragment.health.MPAllergyFragment"
+            tools:layout="@layout/fragment_mp_allergy" />
+    <fragment
+            android:id="@+id/surgeryFragment"
+            android:name="com.cloud273.patient.fragment.health.MPSurgeryFragment"
+            tools:layout="@layout/fragment_mp_surgery" />
+    <fragment
+            android:id="@+id/bookingSummaryFragment"
+            android:name="com.cloud273.patient.fragment.booking.MPBookingSummaryFragment"
+            tools:layout="@layout/fragment_mp_booking_summary" />
+    <fragment
+            android:id="@+id/bookingSpecialtyFragment"
+            android:name="com.cloud273.patient.fragment.booking.MPBookingSpecialtyFragment"
+            tools:layout="@layout/fragment_mp_booking_specialty">
+        <action
+                android:id="@+id/action_bookingSpecialtyFragment_to_bookingDoctorFragment"
+                app:destination="@id/bookingListDoctorFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/bookingListDoctorFragment"
+            android:name="com.cloud273.patient.fragment.booking.MPBookingListDoctorFragment"
+            tools:layout="@layout/fragment_mp_booking_list_doctor">
+        <action
+                android:id="@+id/action_bookingDoctorFragment_to_bookingDoctorDetailFragment"
+                app:destination="@id/bookingDoctorDetailFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/bookingDoctorDetailFragment"
+            android:name="com.cloud273.patient.fragment.booking.MPBookingDoctorFragment"
+            tools:layout="@layout/fragment_mp_booking_doctor">
+        <action
+                android:id="@+id/action_bookingDoctorDetailFragment_to_bookingTimeFragment"
+                app:destination="@id/bookingTimeFragment" />
+        <action
+                android:id="@+id/action_bookingDoctorDetailFragment_to_certificateFragment"
+                app:destination="@id/certificateFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/certificateFragment"
+            android:name="com.cloud273.mcs.fragment.McsCertificateFragment"
+            tools:layout="@layout/fragment_mcs_certificate" />
+</navigation>

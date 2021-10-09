@@ -1,0 +1,58 @@
+{
+    "big-font": {
+        "name": "HelveticaNeue",
+        "size": 22.0
+    },
+    "header-title-font": {
+        "name": "HelveticaNeue-Medium",
+        "size": 21
+    },
+    "medium-font": {
+        "name": "HelveticaNeue",
+        "size": 19.0
+    },
+    "medium-italic-font": {
+        "name": "HelveticaNeue-Italic",
+        "size": 19.0
+    },
+    "medium-medium-font": {
+        "name": "HelveticaNeue-Medium",
+        "size": 19.0
+    },
+    "normal-font": {
+        "name": "HelveticaNeue",
+        "size": 17.0
+    },
+    "normal-italic-font": {
+        "name": "HelveticaNeue-Italic",
+        "size": 17.0
+    },
+    "normal-medium-font": {
+        "name": "HelveticaNeue-Medium",
+        "size": 17.0
+    },
+    "small-font": {
+        "name": "HelveticaNeue",
+        "size": 15.0
+    },
+    "small-italic-font": {
+        "name": "HelveticaNeue-Italic",
+        "size": 15.0
+    },
+    "small-medium-font": {
+        "name": "HelveticaNeue-Medium",
+        "size": 15.0
+    },
+    "tiny-font": {
+        "name": "HelveticaNeue",
+        "size": 13.0
+    },
+    "tiny-italic-font": {
+        "name": "HelveticaNeue-Italic",
+        "size": 13.0
+    },
+    "tiny-medium-font": {
+        "name": "HelveticaNeue-Medium",
+        "size": 13.0
+    }
+}

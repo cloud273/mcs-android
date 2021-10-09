@@ -1,0 +1,15 @@
+[
+    {
+        "code": "vi",
+        "name": "Việt Nam",
+        "title": "Đổi ngôn ngữ",
+        "cancel": "Không"
+    },
+    {
+        "code": "en",
+        "name": "English",
+        "title": "Change language",
+        "cancel": "Cancel"
+    }
+    
+]

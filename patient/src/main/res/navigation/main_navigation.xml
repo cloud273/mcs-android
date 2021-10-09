@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/main_navigation"
+            app:startDestination="@id/bookingNavigation">
+
+    <navigation
+            android:id="@+id/bookingNavigation"
+            app:startDestination="@id/bookingPackageTypeFragment">
+        <fragment
+                android:id="@+id/bookingPackageTypeFragment"
+                android:name="com.cloud273.patient.fragment.booking.MPBookingPackageTypeFragment"
+                tools:layout="@layout/fragment_mp_booking_package_type" />
+    </navigation>
+
+    <navigation
+            android:id="@+id/historyNavigation"
+            app:startDestination="@id/listAppointmentFragment">
+
+        <fragment
+                android:id="@+id/listAppointmentFragment"
+                android:name="com.cloud273.patient.fragment.appointment.MPListAppointmentFragment"
+                tools:layout="@layout/fragment_mp_list_appointment">
+            <action
+                    android:id="@+id/action_listAppointmentFragment_to_appointmentFragment"
+                    app:destination="@id/appointmentFragment" />
+        </fragment>
+        <fragment
+                android:id="@+id/appointmentFragment"
+                android:name="com.cloud273.patient.fragment.appointment.MPAppointmentFragment"
+                tools:layout="@layout/fragment_mp_appointment" />
+    </navigation>
+
+    <navigation
+            android:id="@+id/healthNavigation"
+            app:startDestination="@id/healthFragment">
+
+        <fragment
+                android:id="@+id/healthFragment"
+                android:name="com.cloud273.patient.fragment.health.MPHealthProfileFragment"
+                tools:layout="@layout/fragment_mp_health_profile">
+            <action
+                    android:id="@+id/action_healthFragment_to_allergyFragment"
+                    app:destination="@id/allergyFragment" />
+            <action
+                    android:id="@+id/action_healthFragment_to_surgeryFragment"
+                    app:destination="@id/surgeryFragment" />
+        </fragment>
+        <fragment
+                android:id="@+id/allergyFragment"
+                android:name="com.cloud273.patient.fragment.health.MPAllergyFragment"
+                tools:layout="@layout/fragment_mp_allergy" />
+        <fragment
+                android:id="@+id/surgeryFragment"
+                android:name="com.cloud273.patient.fragment.health.MPSurgeryFragment"
+                tools:layout="@layout/fragment_mp_surgery" />
+    </navigation>
+
+    <navigation
+            android:id="@+id/settingNavigation"
+            app:startDestination="@id/settingFragment">
+
+        <fragment
+                android:id="@+id/settingFragment"
+                android:name="com.cloud273.patient.fragment.setting.MPSettingFragment"
+                tools:layout="@layout/fragment_mp_setting">
+            <action
+                    android:id="@+id/action_settingFragment_to_webFragment"
+                    app:destination="@+id/webFragment" />
+            <action
+                    android:id="@+id/action_settingFragment_to_updateAccountFragment"
+                    app:destination="@id/updateAccountFragment" />
+            <action
+                    android:id="@+id/action_settingFragment_to_updatePasswordFragment"
+                    app:destination="@+id/updatePasswordFragment" />
+        </fragment>
+
+        <fragment android:id="@+id/webFragment"
+                  tools:layout="@layout/fragment_mcs_web"
+                  android:name="com.cloud273.mcs.fragment.McsWebFragment"/>
+
+        <fragment
+                android:id="@+id/updateAccountFragment"
+                android:name="com.cloud273.patient.fragment.account.MPUpdateAccountFragment"
+                tools:layout="@layout/fragment_mp_update_account" />
+
+        <fragment
+                android:id="@+id/updatePasswordFragment"
+                android:name="com.cloud273.patient.fragment.account.MPUpdatePasswordFragment"
+                tools:layout="@layout/fragment_mp_update_password" />
+
+    </navigation>
+
+</navigation>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:startDestination="@id/mdListAppointmentFragment"
+            android:id="@+id/main_navigation">
+
+    <fragment
+            android:id="@+id/mdListAppointmentFragment"
+            android:name="com.cloud273.doctor.fragment.appointment.MDListAppointmentFragment"
+            tools:layout="@layout/fragment_md_list_appointment">
+        <action
+                android:id="@+id/action_mdListAppointmentFragment_to_mdAppointmentFragment"
+                app:destination="@id/mdAppointmentFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/mdAppointmentFragment"
+            android:name="com.cloud273.doctor.fragment.appointment.MDAppointmentFragment"
+            tools:layout="@layout/fragment_md_appointment">
+        <action
+                android:id="@+id/action_mdAppointmentFragment_to_mdPrescriptionFragment"
+                app:destination="@id/mdPrescriptionFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/mdPrescriptionFragment"
+            android:name="com.cloud273.doctor.fragment.appointment.MDPrescriptionFragment"
+            tools:layout="@layout/fragment_md_prescription" />
+    <fragment
+            android:id="@+id/mdWorkingUpdateFragment"
+            android:name="com.cloud273.doctor.fragment.setting.MDWorkingUpdateFragment"
+            tools:layout="@layout/fragment_md_working_update_fragment" />
+    <fragment
+            android:id="@+id/mdDoctorFragment"
+            android:name="com.cloud273.doctor.fragment.setting.MDDoctorFragment"
+            tools:layout="@layout/fragment_md_doctor" />
+    <fragment
+            android:id="@+id/mdScheduleFragment"
+            android:name="com.cloud273.doctor.fragment.setting.MDScheduleFragment"
+            tools:layout="@layout/fragment_md_schedule">
+        <action
+                android:id="@+id/action_mdScheduleFragment_to_mdWorkingUpdateFragment"
+                app:destination="@id/mdWorkingUpdateFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/mdAccountUpdatePasswordFragment"
+            android:name="com.cloud273.doctor.fragment.account.MDAccountUpdatePasswordFragment"
+            tools:layout="@layout/fragment_md_account_update_password" />
+    <fragment
+            android:id="@+id/mdSettingFragment"
+            android:name="com.cloud273.doctor.fragment.setting.MDSettingFragment"
+            tools:layout="@layout/fragment_md_setting">
+        <action
+                android:id="@+id/action_mdSettingFragment_to_mdClinicFragment"
+                app:destination="@id/mdClinicFragment" />
+        <action
+                android:id="@+id/action_mdSettingFragment_to_mdListPackageFragment"
+                app:destination="@id/mdListPackageFragment" />
+        <action
+                android:id="@+id/action_mdSettingFragment_to_mdScheduleFragment"
+                app:destination="@id/mdScheduleFragment" />
+        <action
+                android:id="@+id/action_mdSettingFragment_to_mdAccountUpdatePasswordFragment"
+                app:destination="@id/mdAccountUpdatePasswordFragment" />
+        <action
+                android:id="@+id/action_mdSettingFragment_to_mdDoctorFragment"
+                app:destination="@id/mdDoctorFragment" />
+        <action
+                android:id="@+id/action_mdSettingFragment_to_mcsWebFragment"
+                app:destination="@id/mcsWebFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/mdHistoryListAppointmentFragment"
+            android:name="com.cloud273.doctor.fragment.history.MDHistoryListAppointmentFragment"
+            tools:layout="@layout/fragment_md_history_list_appointment">
+        <action
+                android:id="@+id/action_mdHistoryListAppointmentFragment_to_mdHistoryAppointmentFragment"
+                app:destination="@id/mdHistoryAppointmentFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/mdHistoryAppointmentFragment"
+            android:name="com.cloud273.doctor.fragment.history.MDHistoryAppointmentFragment"
+            tools:layout="@layout/fragment_md_appointment" />
+    <fragment
+            android:id="@+id/mdClinicFragment"
+            android:name="com.cloud273.doctor.fragment.setting.MDClinicFragment"
+            tools:layout="@layout/fragment_md_clinic" />
+    <fragment
+            android:id="@+id/mcsCertificateFragment"
+            android:name="com.cloud273.mcs.fragment.McsCertificateFragment"
+            tools:layout="@layout/fragment_mcs_certificate" />
+    <fragment
+            android:id="@+id/mdListPackageFragment"
+            android:name="com.cloud273.doctor.fragment.setting.MDListPackageFragment"
+            tools:layout="@layout/fragment_md_list_package">
+        <action
+                android:id="@+id/action_mdListPackageFragment_to_mdPackageDetailFragment"
+                app:destination="@id/mdPackageDetailFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/mdPackageDetailFragment"
+            android:name="com.cloud273.doctor.fragment.setting.MDPackageDetailFragment"
+            tools:layout="@layout/fragment_md_package_detail" />
+    <fragment android:id="@+id/mcsWebFragment"
+            tools:layout="@layout/fragment_mcs_web"
+            android:name="com.cloud273.mcs.fragment.McsWebFragment"/>
+
+</navigation>

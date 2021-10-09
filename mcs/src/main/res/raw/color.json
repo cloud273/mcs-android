@@ -1,0 +1,58 @@
+{
+    "background": {
+        "dark": "FFFFFF",
+        "light": "FFFFFF"
+    },
+    "black-color": {
+        "dark": "000000",
+        "light": "000000"
+    },
+    "blue-color": {
+        "dark": "1C7DD6",
+        "light": "1C7DD6"
+    },
+    "cell-highlight-background": {
+        "dark": "D3D3D3",
+        "light": "D3D3D3"
+    },
+    "error-color": {
+        "dark": "FF0000",
+        "light": "FF0000"
+    },
+    "footer-background": {
+        "dark": "F7F7F7",
+        "light": "F7F7F7"
+    },
+    "green-color": {
+        "dark": "008F00",
+        "light": "008F00"
+    },
+    "header-background": {
+        "dark": "F7F7F7",
+        "light": "F7F7F7"
+    },
+    "header-tint-color": {
+        "dark": "007BFA",
+        "light": "007BFA"
+    },
+    "header-title-color": {
+        "dark": "000000",
+        "light": "000000"
+    },
+    "lightgray-color": {
+        "dark": "C7C7CD",
+        "light": "C7C7CD"
+    },
+    "red-color": {
+        "dark": "F92602",
+        "light": "F92602"
+    },
+    "title-blue-color": {
+        "dark": "007BFA",
+        "light": "007BFA"
+    },
+    "white-color": {
+        "dark": "FFFFFF",
+        "light": "FFFFFF"
+    }
+}
