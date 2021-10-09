@@ -22,7 +22,7 @@
             app:layout_constraintBottom_toTopOf="@+id/genderTV"/>
     <TextView
             tools:text="Gender"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/genderTV"
             app:layout_constraintStart_toStartOf="parent"

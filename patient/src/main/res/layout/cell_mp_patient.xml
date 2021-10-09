@@ -9,36 +9,35 @@
         android:background="@drawable/background_highlight"
         tools:ignore="HardcodedText">
 
-
     <com.mikhaellopez.circularimageview.CircularImageView
-            app:srcCompat="@mipmap/profile_icon"
-            app:civ_shadow="false"
             android:id="@+id/imageView"
-            android:layout_weight="1"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginStart="@dimen/margin"
-            app:layout_constraintDimensionRatio="1"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="@dimen/margin"
-            app:civ_border_width="1dp"
+            android:layout_marginStart="@dimen/margin"
+            android:layout_weight="1"
             app:civ_border_color="@color/light_gray_color"
-            app:layout_constraintBottom_toTopOf="@+id/genderTV"/>
-    <TextView
-            android:text="Gender"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/genderTV"
+            app:civ_border_width="1dp"
+            app:civ_shadow="false"
+            app:layout_constraintBottom_toTopOf="@+id/genderTV"
+            app:layout_constraintDimensionRatio="1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/profile_icon" />
+
+    <TextView
+            android:id="@+id/genderTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
             android:textAlignment="center"
-            app:layout_constraintTop_toBottomOf="@+id/imageView"
-            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            android:textColor="@color/black_color"
             android:textSize="@dimen/small_text_size"
             android:textStyle="italic"
-            android:textColor="@color/black_color"
-            />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <LinearLayout
             android:id="@+id/linearLayout"
