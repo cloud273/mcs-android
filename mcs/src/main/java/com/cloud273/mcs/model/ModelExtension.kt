@@ -92,9 +92,9 @@ fun McsAptStatusType.getString(): String {
         McsAptStatusType.created -> "Created_status".localized
         McsAptStatusType.accepted -> "Accepted_status".localized
         McsAptStatusType.rejected -> "Rejected_status".localized
-        McsAptStatusType.cancelled -> "Cancelled".localized
-        McsAptStatusType.started -> "In_progress".localized
-        else -> "Finished".localized
+        McsAptStatusType.cancelled -> "Cancelled_status".localized
+        McsAptStatusType.started -> "Started_status".localized
+        else -> "Finished_status".localized
     }
 }
 
