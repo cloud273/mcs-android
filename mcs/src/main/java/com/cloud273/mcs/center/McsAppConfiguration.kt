@@ -70,7 +70,7 @@ class McsAppConfiguration(private val application: Application) {
     }
 
     val creatableEnd: Int
-        get() = _center.getInt(acceptableEndKey, defaultCreatableEnd)
+        get() = _center.getInt(creatableEndKey, defaultCreatableEnd)
 
     val acceptableEnd: Int
         get() = _center.getInt(acceptableEndKey, defaultAcceptableEnd)
@@ -82,7 +82,7 @@ class McsAppConfiguration(private val application: Application) {
         get() = _center.getInt(rejectableEndKey, defaultRejectableEnd)
 
     val beginableFrom: Int
-        get() = _center.getInt(beginableEndKey, defaultBeginableFrom)
+        get() = _center.getInt(beginableFromKey, defaultBeginableFrom)
 
     val beginableEnd: Int
         get() = _center.getInt(beginableEndKey, defaultBeginableEnd)
