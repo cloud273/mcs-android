@@ -13,7 +13,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme" tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name="com.cloud273.doctor.activity.MDMainActivity">
+        <activity android:name="com.cloud273.doctor.activity.MDMainActivity"
+                android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -22,7 +23,8 @@
         </activity>
         <activity android:name="com.cloud273.doctor.activity.MDLoginActivity">
         </activity>
-        <service android:name="com.cloud273.doctor.service.MDFCMService">
+        <service android:name="com.cloud273.doctor.service.MDFCMService"
+                android:exported="true">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
